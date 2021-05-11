@@ -262,31 +262,26 @@ global $mydb;
 
 		$sql="UPDATE `tbljobregistration` SET `REMARKS`='{$remarks}',PENDINGAPPLICATION=0,HVIEW=0,DATETIMEAPPROVED=NOW() WHERE `REGISTRATIONID`='{$id}'";
 		$mydb->setQuery($sql);
-		$cur = $mydb->executeQuery();
-		
+		$cur = $mydb->execute();
 		if ($cur){
 			# code...
 			$sql = "SELECT * FROM `tblfeedback` WHERE `REGISTRATIONID`='{$id}'";
 			$mydb->setQuery($sql);
 			$res = $mydb->loadSingleResult();
-			echo "hello1";
-			if (isset($res)) {
+			if ($res) {
 				# code...
 				$sql="UPDATE `tblfeedback` SET `FEEDBACK`='{$remarks}' WHERE `REGISTRATIONID`='{$id}'";
-				$mydb->setQuery($sql);
-				$cur = $mydb->executeQuery();
+				$cur = 	$mydb->setQuery($sql);
 			}else{
 				$sql="INSERT INTO `tblfeedback`(`APPLICANTID`, `REGISTRATIONID`,`FEEDBACK`) VALUES ('{$applicantid}','{$id}','{$remarks}')";
-				$mydb->setQuery($sql);
-				$cur = $mydb->executeQuery(); 
-
+				$cur = $mydb->setQuery($sql);
 			}
 
 			message("Applicant is calling for an interview.", "success");
 			redirect("index.php?view=view&id=".$id); 
 		}else{
 			message("cannot be save.", "error");
-			// redirect("index.php?view=view&id=".$id); 
+			redirect("index.php?view=view&id=".$id); 
 		}
 
 

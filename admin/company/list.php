@@ -1,8 +1,4 @@
-<?php 
-	  if (!isset($_SESSION['ADMIN_USERID'])){
-      redirect(web_root."admin/index.php");
-     } 
-?>
+
 	<div class="row">
        	 <div class="col-lg-12">
             <h1 class="page-header">List of Companies  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> Add Company</a>  </h1>

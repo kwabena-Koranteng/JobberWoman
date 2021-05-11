@@ -163,6 +163,7 @@
             <i class="fa fa-suitcase"></i> <span>Vacancy</span> 
           </a>
         </li>
+        
         <li class="<?php echo (currentpage() == 'applicants') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>admin/applicants/">
             <i class="fa fa-users"></i> <span>Applicants</span> 
@@ -256,8 +257,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.2
     </div>
-    <strong>Copyright &copy; 2018 <a href="#">Janno Palacios</a>.</strong> All rights
-    reserved.
+  
   </footer>
 
   

@@ -52,8 +52,11 @@ if (!isset($_SESSION['APPLICANTID'])) {
 
               <div class="form-group">   
                 Sex: 
-                    <input checked id="optionsRadios1" checked="True" name="optionsRadios" type="radio" value="Female">Female
-                     <input id="optionsRadios2"   name="optionsRadios" type="radio" value="Male"> Male   
+                <select name="optionsRadios">
+              <option value="">Select...</option>
+              <option value="Male">Male</option>
+               <option value="Female">Female</option>
+</select>  
               </div>
 
 

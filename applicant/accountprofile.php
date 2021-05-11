@@ -69,21 +69,17 @@
                   <label class="col-md-4 control-label" for=
                   "Gender">Sex:</label>
 
-                  <div class="col-md-8">
-                   <div class="col-lg-5">
-                      <div class="radio">
-                        <label><input checked id="optionsRadios1" checked="True" name="optionsRadios" type="radio" value="Female">Female</label>
-                      </div>
-                    </div>
+                <select name="optionsRadios">
+                <?php
+              if($appl->SEX == "Male"){?>
+              <option value="Male">Male</option>
 
-                    <div class="col-lg-4">
-                      <div class="radio">
-                        <label><input id="optionsRadios2"   name="optionsRadios" type="radio" value="Male"> Male</label>
-                      </div>
-                    </div> 
-                   
-                  </div>
-                </div>
+              <?php }else{ ?>
+               <option value="Female">Female</option>
+               
+               <?php }?>
+</select>  
+              </div>
               </div> 
 
                <div class="form-group">
@@ -96,7 +92,7 @@
                         <span class="input-group-addon"> 
                          <i class="fa fa-calendar"></i> 
                         </span>  
-                         <input class="form-control input-sm date_picker" id="BIRTHDATE" name="BIRTHDATE" placeholder="Date of Birth" type="text"    value="<?php echo date_format(date_create($appl->BIRTHDATE),'m/d/Y');?>" required  autocomplete="off">
+                         <input class="form-control input-sm date_picker" id="BIRTHDATE" name="BIRTHDATE" placeholder="Date of Birth" type="text"    value="<?php echo $appl->BIRTHDATE;?>" required  autocomplete="off">
                     </div>
                   </div>
                 </div>

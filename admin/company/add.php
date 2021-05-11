@@ -1,10 +1,3 @@
-
-<?php
-     if (!isset($_SESSION['ADMIN_USERID'])){
-      redirect(web_root."admin/index.php");
-     }
-
-?>
  <form class="form-horizontal span6" action="controller.php?action=add" method="POST">
 
                 <div class="row">

@@ -40,7 +40,7 @@ require_once("../include/initialize.php");
   </div> -->
   <!-- /.login-logo -->
   <div class="login-box-body" style="min-height: 400px;">
-    <h1 class="login-box-msg">Login to ERIS</h1>
+    <h1 class="login-box-msg">Login to JobberWoman</h1>
     <hr/>
     <p><?php check_message(); ?></p>
 
@@ -66,10 +66,15 @@ require_once("../include/initialize.php");
           <button type="submit" name="btnLogin" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
       </div>
+      <div class="col-xs-10 text center">
+      <p>Dont have an account?<p> <a href="<?php echo web_root ;?>registercompany.php">Register</a>
+      <p><a href="../index.php">Go to Homepage</a></p>
+      </div>
         <!-- /.col -->
       </div>
+      
     </form>
-
+    
    <!--  <div class="social-auth-links text-center">
       <p>- OR -</p>
       <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using

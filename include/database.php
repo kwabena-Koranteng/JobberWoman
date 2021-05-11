@@ -55,6 +55,7 @@ class Database {
 	function executeQuery(){
 		try{
 			$this->query->execute();
+		
 
 		 } catch (PDOException $e) {
 		    echo "Failed to get query handle: " . $e->getMessage() . "\n";
@@ -62,6 +63,17 @@ class Database {
 		  }	
 	}
 	
+	function execute(){
+		try{
+			$this->query->execute();
+			return true;
+
+		 } catch (PDOException $e) {
+		    echo "Failed to get query handle: " . $e->getMessage() . "\n";
+		    exit;
+		  }	
+	}
+
 	function loadResultList() {
 		
 		$results = $this->query->fetchAll(PDO::FETCH_OBJ);

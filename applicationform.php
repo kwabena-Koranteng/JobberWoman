@@ -16,7 +16,7 @@ if (isset($_GET['search'])) {
 # code...
 $jobid = $_GET['search'];
 }else{
-$jobid = '';
+$jobid = $_GET['job'];
 
 }
 $sql = "SELECT * FROM `tblcompany` c,`tbljob` j WHERE c.`COMPANYID`=j.`COMPANYID` AND JOBID LIKE '%" . $jobid ."%' ORDER BY DATEPOSTED DESC" ;
