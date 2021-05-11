@@ -122,18 +122,15 @@ CREATE TABLE `tblcategory` (
 --
 
 INSERT INTO `tblcategory` (`CATEGORYID`, `CATEGORY`) VALUES
-(10, 'Technology'),
-(11, 'Managerial'),
-(12, 'Engineer'),
+(10, 'Data Science'),
+(11, 'Web development'),
+(12, 'Mobile development'),
 (13, 'IT'),
-(14, 'Civil Engineer'),
-(15, 'HR'),
-(23, 'Sales'),
-(24, 'Banking'),
-(25, 'Finance'),
-(26, 'BPO'),
-(27, 'Degital Marketing'),
-(28, 'Shipping');
+(14, 'Site reliability Engineering'),
+(15, 'DevOps Engineering'),
+(23, 'Software development'),
+(24, 'Data Science');
+
 
 -- --------------------------------------------------------
 
@@ -203,8 +200,8 @@ CREATE TABLE `tbljob` (
 --
 
 INSERT INTO `tbljob` (`JOBID`, `COMPANYID`, `CATEGORY`, `OCCUPATIONTITLE`, `REQ_NO_EMPLOYEES`, `SALARIES`, `DURATION_EMPLOYEMENT`, `QUALIFICATION_WORKEXPERIENCE`, `JOBDESCRIPTION`, `PREFEREDSEX`, `SECTOR_VACANCY`, `JOBSTATUS`, `DATEPOSTED`) VALUES
-(1, 2, 'Technology', 'ISD', 6, 15000, 'jan 30', 'Two year Experience', 'We are looking for bachelor of science in information technology.\r\nasdasdasd', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
-(2, 2, 'Technology', 'Accounting', 1, 15000, 'may 20', 'Two years Experience', 'We are looking for bachelor of science in Acountancy', 'Female', 'yes', '', '2018-05-20 02:33:00');
+(1, 2, 'Technology', 'Data Science', 6, 15000, 'jan 30', 'Two year Experience', 'We are looking for bachelor of science in information technology.\r\nasdasdasd', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
+(2, 2, 'Technology', 'Mobile Development', 1, 15000, 'may 20', 'Two years Experience', 'We are looking for bachelor of science in Acountancy', 'Female', 'yes', '', '2018-05-20 02:33:00');
 
 -- --------------------------------------------------------
 

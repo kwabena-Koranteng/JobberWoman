@@ -50,8 +50,8 @@
           <ul class="list-group"> 
          
             <li class="list-group-item text-muted">Profile</li> 
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Real Name</strong></span> 
-             <?php echo $applicant->FNAME .' '.substr($applicant->MNAME, 1,2).'. '.$applicant->LNAME; ?> 
+            <li class="list-group-item text-left"><span class="pull-left"><strong>Real Name</strong></span> 
+            <p> <?php echo $applicant->FNAME .' '.$applicant->MNAME.'. '.$applicant->LNAME; ?> </p>
              </li>
             
           </ul> 
