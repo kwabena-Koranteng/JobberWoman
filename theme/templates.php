@@ -94,7 +94,7 @@
 	          
             <li class="nav-item <?php  if(isset($_GET['q'])) { if($_GET['q']=='company'){ echo 'active'; }else{ echo ''; }}  ?>"><a class="nav-link"  href="<?php echo web_root; ?>index.php?q=company">Company</a></li>
             <li class="nav-item <?php  if(isset($_GET['q'])) { if($_GET['q']=='hiring'){ echo 'active'; }else{ echo ''; }} ?>"><a  class="nav-link" href="<?php echo web_root; ?>index.php?q=hiring">Hiring Now</a></li>
-            <li class="nav-item"><a href="https://share.streamlit.io/stephentorku/jobberwoman/app.py" class="nav-link">Salary Prediction</a></li> 
+            <li class="nav-item"><a href="https://share.streamlit.io/stephentorku/jobberwoman/app.py" class="nav-link"  target="_blank" rel="noopener noreferrer">Salary Prediction</a></li> 
           
 
         
