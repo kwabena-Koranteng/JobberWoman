@@ -11,7 +11,7 @@
 // defined('LIB_PATH') ? null : define ('LIB_PATH',SITE_ROOT.DS.'include');
 
 //load the database configuration first.
-require_once("../include/config.php");
+require_once("./include/config.php");
 require_once("./include/function.php");
 require_once("./include/accounts.php");
 require_once("./include/autonumbers.php");  
@@ -23,5 +23,5 @@ require_once("./include/applicant.php");
 require_once("./include/jobregistration.php");  
   
 
-// require_once(LIB_PATH.DS."database.php");
+require_once("./include/database.php");
 ?>
