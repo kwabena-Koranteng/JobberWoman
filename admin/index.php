@@ -1,5 +1,18 @@
 <?php 
-require_once( "./../include/initialize.php");
+// require_once( "./../include/initialize.php");
+require_once("./../include/config.php");
+require_once("./../include/function.php");
+require_once("./../include/accounts.php");
+require_once("./../include/autonumbers.php");  
+require_once("./../include/companies.php");  
+require_once("./../include/job.php");  
+require_once("./../include/employees.php");  
+require_once("./../include/categories.php");  
+require_once("./../include/applicant.php");  
+require_once("./../include/jobregistration.php");  
+  
+
+require_once("./include/database.php");
  if(!isset($_SESSION['ADMIN_USERID'])){
     redirect(web_root."admin/login.php");
   }
