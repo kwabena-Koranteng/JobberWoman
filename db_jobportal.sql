@@ -123,12 +123,12 @@ CREATE TABLE `tblcategory` (
 
 INSERT INTO `tblcategory` (`CATEGORYID`, `CATEGORY`) VALUES
 (10, 'Data Science'),
-(11, 'Web development'),
-(12, 'Mobile development'),
+(11, 'Web Development'),
+(12, 'Mobile Development'),
 (13, 'IT'),
-(14, 'Site reliability Engineering'),
+(14, 'Site Reliability Engineering'),
 (15, 'DevOps Engineering'),
-(23, 'Software development');
+(23, 'Software Development');
 
 
 
@@ -200,8 +200,8 @@ CREATE TABLE `tbljob` (
 --
 
 INSERT INTO `tbljob` (`JOBID`, `COMPANYID`, `CATEGORY`, `OCCUPATIONTITLE`, `REQ_NO_EMPLOYEES`, `SALARIES`, `DURATION_EMPLOYEMENT`, `QUALIFICATION_WORKEXPERIENCE`, `JOBDESCRIPTION`, `PREFEREDSEX`, `SECTOR_VACANCY`, `JOBSTATUS`, `DATEPOSTED`) VALUES
-(1, 2, 'Technology', 'Data Science', 6, 15000, 'jan 30', 'Two year Experience', 'We are looking for bachelor of science in Data Science/Machine Learning.', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
-(2, 2, 'Technology', 'Mobile Development', 1, 15000, 'may 20', 'Two years Experience', 'We are looking for bachelor of science in Mobile development', 'Female', 'yes', '', '2018-05-20 02:33:00');
+(1, 2, 'Data Science', 'Data Scientist', 6, 15000, 'jan 30', 'Two year Experience', 'We are looking for bachelor of science in Data Science/Machine Learning.', 'Male/Female', 'yes', '', '2018-05-20 00:00:00'),
+(2, 2, 'Mobile Development', 'Mobile Developer', 1, 15000, 'may 20', 'Two years Experience', 'We are looking for bachelor of science in Mobile development', 'Female', 'yes', '', '2018-05-20 02:33:00');
 
 -- --------------------------------------------------------
 

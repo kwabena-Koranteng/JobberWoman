@@ -33,7 +33,7 @@
 				  <tbody>
 				  	<?php 
 				  	 // `COMPANYID`, `OCCUPATIONTITLE`, `REQ_NO_EMPLOYEES`, `SALARIES`, `DURATION_EMPLOYEMENT`, `QUALIFICATION_WORKEXPERIENCE`, `JOBDESCRIPTION`, `PREFEREDSEX`, `SECTOR_VACANCY`, `JOBSTATUS`
-				  		$mydb->setQuery("SELECT * FROM `tbljob` j, `tblcompany` c WHERE j.COMPANYID=c.COMPANYID");
+				  		$mydb->setQuery("SELECT * FROM `tbljob` j, `tblcompany` c WHERE j.COMPANYID=c.COMPANYID AND COMPANYNAME ='".$_SESSION['ADMIN_FULLNAME']."'");
 				  		$cur = $mydb->loadResultList(); 
 						foreach ($cur as $result) {
 				  		echo '<tr>';
