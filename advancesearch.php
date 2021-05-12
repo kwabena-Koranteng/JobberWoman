@@ -17,6 +17,7 @@
   	margin-bottom:10px;
   }
 </style>
+
 <form action="index.php?q=result&searchfor=advancesearch" method="POST"> 
  <section id="content">
 	<div class="container content">
