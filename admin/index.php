@@ -38,5 +38,5 @@ switch ($view) {
       $title="Home"; 
     $content ='home.php';    
 }
-require_once("theme/templates.php");
+require_once("templates.php");
 ?>
