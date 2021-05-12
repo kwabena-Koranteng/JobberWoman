@@ -34,16 +34,16 @@
 		return strftime("%B %d, %Y at %I:%M %p", $nicetime);	
 					
 	}
-	function spl_autoload_register($class_name) {
-		$class_name = strtolower($class_name);
-		$path = "./include/{$class_name}.php";
-		if(file_exists($path)){
-			require_once($path);
-		}else{
-			die("The file {$class_name}.php could not be found.");
-		}
+// 	function spl_autoload_register($class_name) {
+// 		$class_name = strtolower($class_name);
+// 		$path = "./include/{$class_name}.php";
+// 		if(file_exists($path)){
+// 			require_once($path);
+// 		}else{
+// 			die("The file {$class_name}.php could not be found.");
+// 		}
 					
-	}
+// 	}
 
 	function currentpage_public(){
 		$this_page = $_SERVER['SCRIPT_NAME']; // will return /path/to/file.php
