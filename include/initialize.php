@@ -12,7 +12,7 @@
 
 //load the database configuration first.
 require_once("../include/config.php");
-require_once"../include/function.php");
+require_once("../include/function.php");
 require_once("../include/session.php");
 require_once("../include/accounts.php");
 require_once(."../include/autonumbers.php");  
