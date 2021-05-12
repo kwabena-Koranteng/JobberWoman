@@ -29,5 +29,5 @@ switch ($view) {
         $_SESSION['appliedjobs']	='active' ;
 		$content ='Profile.php';		
 }
-require_once("../theme/templates.php");
+require_once("./theme/templates.php");
 ?>
