@@ -1,5 +1,5 @@
 <?php
-require_once("./include/database.php");
+require_once("./../include/database.php");
 class User {
 	protected static  $tblname = "tblusers";
 
